@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>100 first quotes of GoodReads</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script> 
+</head>
+<body>
+    
+
+<h1>GOODREADS - first site quotes scrapped</h1>
+<h2>Access-Control-Allow-Origin - needs to be enabled in browser to make it work ->use browser plugins/extensions</h2>
+<form name="FetchThis" onsubmit="return scrapePages()">
+  <div id="kokpit">
+   
+    <div>
+    <h3>Provide URL</h3>
+    <input type="text" id="thisurl" size="22" name="thisurl" value="https://www.goodreads.com/quotes?page="></div>
+    <div>
+    <h3>Number of sub-websites to scrape</h3>
+    <input type="text" id="npages" size="22" name="npages" value="1"></div>
+    <div>
+    <h3>Provide Selector</h3>
+    <input type="text" id="nselector" size="22" name="nselector" value=".quoteText" ></div>
+    
+    
+    
+</div>
+<div> <input type="submit" value="Submit" > </div>
+
+</form>
+<button onclick="scrapePages()" id="runit">OutSide Form Submit</button>
+
+        <div id="write"></div>
+ 
+    <script src="scrape.js"></script>
+    </body>       
+</html>

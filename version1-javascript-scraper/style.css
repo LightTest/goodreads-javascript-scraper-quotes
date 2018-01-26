@@ -1,0 +1,59 @@
+button {
+    padding: 10px;
+    background-color: deepskyblue;
+    border: none;
+    transition: all .5s;
+}
+
+.hideit {
+    transform: scale(0.5);
+    visibility: hidden;
+    
+}
+
+#kokpit {
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: row;
+    margin-bottom: 1rem;
+  
+}
+
+
+h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+input {
+  
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;    
+    resize:horizontal;    
+}
+
+input[type=submit] {
+    display: none;
+}
+
+#kokpit div {
+    min-width: 20rem;
+    width: 22%;
+
+}
+
+#kokpit div:nth-child(1) {
+    width: 30rem;
+} 
+
+#kokpit div:nth-child(1) input {
+    padding-left: 5px;
+    height: 22px;
+    width: 26rem;
+    font-size: 0.8rem;
+    
+    resize: horizontal;
+    
+}
